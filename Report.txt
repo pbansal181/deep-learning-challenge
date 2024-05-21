@@ -1,0 +1,28 @@
+#Overview of the analysis: Explain the purpose of this analysis.
+
+We have given a nonprofit foundation's(Alphabet Soup) dataset in csv format and this organization wants a tool that can help it select the applicants for funding with the best chance of success in their ventures.
+
+We are creating a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup using Machine Learning and Neural Networks
+
+Results: Using bulleted lists and images to support your answers, address the following questions:
+
+Data Preprocessing
+
+What variable(s) are the target(s) for your model?
+What variable(s) are the features for your model?
+What variable(s) should be removed from the input data because they are neither targets nor features?
+Compiling, Training, and Evaluating the Model
+
+Firstly, we remove the non-beneficial ID columns which are EIN' and 'NAME'. The 'IS_SUCCESSFUL' columns is considered as target variable while 'APPLICATION_TYPE' and 'CLASSIFICATION' are used for binning purpose
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take in your attempts to increase model performance?
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take in your attempts to increase model performance?
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.

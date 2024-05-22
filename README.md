@@ -55,7 +55,7 @@ Start by uploading the starter file to Google Colab, then using the information 
 
 8. Scale the training and testing features datasets by creating a StandardScaler instance, fitting it to the training data, then using the transform function.
 
-**Step 2: Compile, Train, and Evaluate the Model**
+**Step 2: Compile, Train and Evaluate the Model**
 
 Using your knowledge of TensorFlow, you’ll design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup-funded organization will be successful based on the features in the dataset. You’ll need to think about how many inputs there are before determining the number of neurons and layers in your model. Once you’ve completed that step, you’ll compile, train, and evaluate your binary classification model to calculate the model’s loss and accuracy.
 
@@ -79,7 +79,7 @@ Using your knowledge of TensorFlow, you’ll design a neural network, or deep le
 
 10. Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity.h5.
 
-** Step 3: Optimize the Model **
+**Step 3: Optimize the Model**
 
 Using your knowledge of TensorFlow, optimize your model to achieve a target predictive accuracy higher than 75%.
 
@@ -112,7 +112,7 @@ Note: If you make at least three attempts at optimizing your model, you will not
 
 5. Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
 
-** Step 4: Write a Report on the Neural Network Model **
+**Step 4: Write a Report on the Neural Network Model**
 
 For this part of the assignment, you’ll write a report on the performance of the deep learning model you created for Alphabet Soup.
 

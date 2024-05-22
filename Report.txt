@@ -1,28 +1,38 @@
-#Overview of the analysis: Explain the purpose of this analysis.
+**Overview of the analysis:** Explain the purpose of this analysis.
 
-We have given a nonprofit foundation's(Alphabet Soup) dataset in csv format and this organization wants a tool that can help it select the applicants for funding with the best chance of success in their ventures.
-
+We have given a nonprofit foundation's(Alphabet Soup) dataset in csv format and this organization wants a tool that can help it select the applicants for funding with the best chance of success in their ventures. 
 We are creating a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup using Machine Learning and Neural Networks
 
-Results: Using bulleted lists and images to support your answers, address the following questions:
+**Results:** Using bulleted lists and images to support your answers, address the following questions:
 
-Data Preprocessing
+**Data Preprocessing**
 
-What variable(s) are the target(s) for your model?
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
-Compiling, Training, and Evaluating the Model
+1. What variable(s) are the target(s) for your model?
+	- The target variable for the model is IS_SUCCESSFUL.
 
-Firstly, we remove the non-beneficial ID columns which are EIN' and 'NAME'. The 'IS_SUCCESSFUL' columns is considered as target variable while 'APPLICATION_TYPE' and 'CLASSIFICATION' are used for binning purpose
+2. What variable(s) are the features for your model?
+	- APPLICATION_TYPE , AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT are the features.
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
+3. What variable(s) should be removed from the input data because they are neither targets nor features?
+	- EIN and NAME are removed from the input data.
+
+**Compiling, Training, and Evaluating the Model**
+
+Firstly, we remove the non-beneficial ID columns which are EIN' and 'NAME'. The 'IS_SUCCESSFUL' columns is considered as target variable while 'APPLICATION_TYPE' and 'CLASSIFICATION' are used for binning purpose. Later using pd.dummies categorical values are converted into numerical values.
+
+1. How many neurons, layers, and activation functions did you select for your neural network model, and why?
+	- 2 layers with 5 and 10 neurons respectively with 1 neuron in output layer. ReLU and Sigmoid functions have been used for hidden and output layers respectively.
+	- The reason for keeping neuron value low helps to keep the model simple and reduces the risk of overfitting. For next layer adding more neurons help capture more complex patterns in the data and allows the model to learn relationships.
+
+2. Were you able to achieve the target model performance?
+	- The model's accuracy is determined as 72% with 0.55 loss.
+
 What steps did you take in your attempts to increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+	- For Optimization: I have added 'NAME' column for binning with 'APPLICATION_TYPE' and 'CLASSIFICATION'. By this I am able to achieve approx. 80%(79.11) accuracy.
 
-Compiling, Training, and Evaluating the Model
+**Summary:** Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+- The optimized deep learning model achieved a satisfactory performance with an accuracy of 79.11%.
+- For improving the performance, we can consider exploring other models like random forests. This type of models handles categorical data more effectively and might capture non-linear relationships better than a simple neural network.
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+**Final Result**
+The deep learning model built and then optimized provides a strong starting point for predicting the success of charity donation applications.
